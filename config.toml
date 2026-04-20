@@ -2,7 +2,7 @@ baseURL = "/"
 title = "FCJ Internship Report - Hoang Chi Thanh"
 theme = "hugo-theme-learn"
 defaultContentLanguage = "en"
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = false
 
 [outputs]
