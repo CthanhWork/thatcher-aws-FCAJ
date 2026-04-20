@@ -26,7 +26,7 @@ Welcome to my internship report and personal worklog for the AWS First Cloud Jou
 
 <p style="text-align: center; margin: 2rem 0;">
   <img
-    src="/images/avatar-v2.png"
+    src="https://cthanhwork.github.io/thatcher-aws-FCAJ/images/avatar-v2.png"
     alt="Hoang Chi Thanh"
     style="width: 260px; max-width: 100%; height: auto; border-radius: 16px; display: inline-block;"
   >
