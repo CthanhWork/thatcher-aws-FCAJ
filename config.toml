@@ -1,0 +1,33 @@
+baseURL = "/"
+title = "FCJ Internship Report - Hoang Chi Thanh"
+theme = "hugo-theme-learn"
+defaultContentLanguage = "en"
+relativeURLs = true
+canonifyURLs = false
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+  themeVariant = "workshop"
+  editURL = ""
+  description = "Worklog and internship report for the AWS First Cloud Journey program."
+  author = "Hoang Chi Thanh"
+  email = "hcthanh.work@gmail.com"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$']
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['^https://api\\.github\\.com/.*$', '^https://avatars\\.githubusercontent\\.com/.*$']
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$']
