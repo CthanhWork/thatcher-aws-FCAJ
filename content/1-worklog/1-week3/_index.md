@@ -5,4 +5,4 @@ weight: 3
 chapter: false
 ---
 
-Write your Week 3 activities here.
+Note for visitors: this section is currently under preparation. I will update my Week 3 worklog soon.

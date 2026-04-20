@@ -5,4 +5,4 @@ weight: 11
 chapter: false
 ---
 
-Write your Week 11 activities here.
+Note for visitors: this section is currently under preparation. I will update my Week 11 worklog soon.
