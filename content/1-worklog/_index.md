@@ -8,6 +8,8 @@ pre: " <b> 1. </b> "
 
 This section tracks my internship progress week by week.
 
+Note for visitors: each weekly page is being updated step by step as I complete more tasks and document my internship experience in detail.
+
 1. [Week 1](1-week1/)
 2. [Week 2](1-week2/)
 3. [Week 3](1-week3/)

@@ -18,11 +18,17 @@ Welcome to my internship report and personal worklog for the AWS First Cloud Jou
 
 **Class:** AWS042026
 
-**Internship Company:** Amazon Web Services Vietnam Co., Ltd.
+**Internship Company:** Cong ty TNHH Amazon Web Services Viet Nam
 
-**Position:** FCJ Cloud Intern
+**Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
 **Duration:** 17/04/2025 - 10/07/2026
+
+**Supervisor:** Nguyen Gia Hung
+
+**Supervisor Email:** [hunggia@amazon.com](mailto:hunggia@amazon.com)
+
+**Supervisor Title:** Head of Solution Architect
 
 <p style="text-align: center; margin: 2rem 0;">
   <img
@@ -33,6 +39,8 @@ Welcome to my internship report and personal worklog for the AWS First Cloud Jou
 </p>
 
 ## Report Sections
+
+Note for visitors: several sections are still being finalized. I will continue updating this report with detailed weekly activities, translated blogs, events, and technical outputs throughout my internship journey.
 
 1. [Worklog](1-worklog/)
 2. [Proposal](2-proposal/)
