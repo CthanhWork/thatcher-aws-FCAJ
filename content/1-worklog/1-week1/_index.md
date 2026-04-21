@@ -1,8 +1,8 @@
 ---
 title: "Week 1"
-date: 2026-04-21
+date: 2026-04-20
 weight: 1
-summary: "Week 1 focused on Security & Governance by implementing a CloudWatch Billing Alarm and an IAM Admin Framework."
+summary: "Week 1 documented internship orientation, team alignment, and the first AWS governance controls for the H-Smart environment."
 chapter: false
 ---
 
@@ -10,7 +10,7 @@ chapter: false
 
 ## Weekly Objective
 
-This week focused on understanding the FCAJ workflow and establishing the first governance controls for the AWS internship environment. The verified technical outputs for this week are the CloudWatch Billing Alarm and the IAM Admin Framework.
+This week focused on understanding the FCAJ workflow and establishing the first governance controls for the AWS internship environment. The two verified technical outputs were a CloudWatch Billing Alarm for early cost visibility and an IAM Admin Framework to reduce daily dependence on the root account while preparing for H-Smart.
 
 ## Tasks To Be Carried Out This Week
 
@@ -33,9 +33,14 @@ This week focused on understanding the FCAJ workflow and establishing the first 
           <li><a href="1-day2-orientation-research/">Team meeting to align direction, consolidate project knowledge, and plan next meetings</a></li>
         </ul>
       </td>
-      <td>08/11/2025</td>
-      <td>08/11/2025</td>
-      <td>-</td>
+      <td>04/20/2026</td>
+      <td>04/20/2026</td>
+      <td>
+        <ul>
+          <li><a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html">Overview of Amazon Web Services</a></li>
+          <li><a href="https://docs.aws.amazon.com/hands-on/latest/getting-started-with-aws-management-console/getting-started-with-aws-management-console.html">Getting Started with the AWS Management Console</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>3</td>
@@ -45,37 +50,43 @@ This week focused on understanding the FCAJ workflow and establishing the first 
           <li><a href="3-iam-admin-framework/">IAM Admin Framework Setup</a></li>
         </ul>
       </td>
-      <td>08/12/2025</td>
-      <td>08/12/2025</td>
-      <td>-</td>
+      <td>04/21/2026</td>
+      <td>04/21/2026</td>
+      <td>
+        <ul>
+          <li><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html">Create a billing alarm to monitor your estimated AWS charges</a></li>
+          <li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html">IAM user groups</a></li>
+          <li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/console-account-alias.html">Using an alias for your AWS account ID</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>4</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>5</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>6</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>7</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
   </tbody>
 </table>
@@ -87,4 +98,4 @@ This week focused on understanding the FCAJ workflow and establishing the first 
 
 ## Note For Mentors
 
-Mentors can review raw evidence directly in the detailed task pages linked from the table above. The current verified evidence set is concentrated in the Billing Alarm Setup and IAM Admin Framework pages, where screenshots are arranged in exact step order.
+Mentors can review raw evidence directly in the detailed task pages linked from the table above. Each detailed page now records implementation evidence, why the task was done, what was learned, concrete troubleshooting notes, and how the result can later be applied to H-Smart.

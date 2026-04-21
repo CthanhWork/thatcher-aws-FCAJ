@@ -2,38 +2,37 @@
 title: "Day 2: Research and Team Meeting"
 date: 2026-04-20
 weight: 1
+summary: "Researched the FCAJ structure and aligned with the team before starting technical setup."
 chapter: false
 ---
 
 # Day 2: Research and Team Meeting
 
-## Objective
+## Why I Did This
 
-The purpose of the first working day was to understand the FCAJ internship program more clearly and align with teammates on the initial direction of the internship project.
+The first working day needed to reduce ambiguity before any AWS implementation started. I used this session to understand how FCAJ deliverables are structured and to align the team on a shared project direction so that later technical work would be traceable and easier to organize.
 
-## Completed Tasks
+## What I Did
 
 ### 1. Research FCAJ Tasks and Expectations
 
-On the first day, I spent time researching the FCAJ program in more detail to understand:
-
-- what tasks are expected during the internship
-- what deliverables need to be completed
-- how the worklog, proposal, translated blogs, workshops, and technical reports should be prepared
-
-This step was important because it helped me build a clearer picture of the internship workflow before moving into technical implementation.
+On April 20, 2026, I reviewed the FCAJ workflow in detail to understand the expected outputs of the internship. The main focus was to clarify the required deliverables, the reporting structure, and the level of technical evidence that should appear in the worklog, proposal, blog translation, and workshop sections.
 
 ### 2. Team Meeting and Direction Alignment
 
-I also participated in a team meeting to establish a shared direction for the next phase of work. During this discussion, the group focused on:
+I also joined a team meeting to align the next working direction. During this discussion, we consolidated what was already known about the project scope, agreed on a common direction for the next phase, and planned the follow-up meetings needed to keep the work synchronized.
 
-- defining a common working direction
-- consolidating the current understanding of the project
-- organizing the knowledge that had already been gathered
-- planning the next meetings and follow-up activities
+## What I Learned
 
-This meeting helped reduce ambiguity at the beginning of the internship and made later technical tasks easier to organize.
+- A worklog should not only list actions. It must also capture reasoning, evidence, lessons learned, and decisions.
+- Early alignment reduces rework. It is more efficient to clarify expectations first and then move into AWS implementation with a shared direction.
+- Reading official AWS material before lab execution improves the quality of later decisions and makes each configuration easier to justify.
 
-## Outcome
+## Reference Materials
 
-By the end of Day 2, I had a better understanding of the FCAJ internship structure and a clearer orientation for how to approach the project work in the following days.
+- [Overview of Amazon Web Services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html)
+- [Getting Started with the AWS Management Console](https://docs.aws.amazon.com/hands-on/latest/getting-started-with-aws-management-console/getting-started-with-aws-management-console.html)
+
+## Application to H-Smart
+
+This orientation work helped me frame H-Smart as more than a coding project. It clarified that every technical step in the internship should later connect back to the H-Smart architecture, operating cost, deployment process, and team access model.
