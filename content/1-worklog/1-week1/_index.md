@@ -1,21 +1,16 @@
 ---
 title: "Week 1"
-date: 2026-04-20
+date: 2026-04-21
 weight: 1
+summary: "Week 1 focused on Security & Governance by implementing a CloudWatch Billing Alarm and an IAM Admin Framework."
 chapter: false
 ---
 
 # Week 1
 
-## Weekly Summary
+## Weekly Objective
 
-During the first week of my internship, I focused on orientation, understanding the FCAJ program, and setting up the initial AWS governance foundation for my personal internship environment.
-
-The main completed worklogs documented in this week are:
-
-- [Day 2: Research and Team Meeting](1-day2-orientation-research/)
-- [CloudWatch Billing Alarm Setup](2-billing-alarm-setup/)
-- [IAM Admin Framework Setup](3-iam-admin-framework/)
+This week focused on understanding the FCAJ workflow and establishing the first governance controls for the AWS internship environment. The verified technical outputs for this week are the CloudWatch Billing Alarm and the IAM Admin Framework.
 
 ## Tasks To Be Carried Out This Week
 
@@ -34,17 +29,62 @@ The main completed worklogs documented in this week are:
       <td>2</td>
       <td>
         <ul>
-          <li><a href="1-day2-orientation-research/">Research: tìm hiểu kỹ hơn về những việc cần làm trong FCAJ</a></li>
-          <li><a href="1-day2-orientation-research/">Họp nhóm: đưa ra một hướng đi chung cho cả nhóm, tổng hợp lại kiến thức về dự án hiện có và lên kế hoạch các cuộc họp tiếp theo</a></li>
+          <li><a href="1-day2-orientation-research/">Research FCAJ tasks and internship expectations</a></li>
+          <li><a href="1-day2-orientation-research/">Team meeting to align direction, consolidate project knowledge, and plan next meetings</a></li>
         </ul>
       </td>
       <td>08/11/2025</td>
       <td>08/11/2025</td>
       <td>-</td>
     </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        <ul>
+          <li><a href="2-billing-alarm-setup/">CloudWatch Billing Alarm Setup</a></li>
+          <li><a href="3-iam-admin-framework/">IAM Admin Framework Setup</a></li>
+        </ul>
+      </td>
+      <td>08/12/2025</td>
+      <td>08/12/2025</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
   </tbody>
 </table>
 
-## Note For Visitors
+## Detailed Technical Worklogs
 
-This week page is used as a summary board. Each completed task will be documented in its own detailed worklog page, and the table above links directly to those pages.
+- [CloudWatch Billing Alarm Setup](2-billing-alarm-setup/)
+- [IAM Admin Framework Setup](3-iam-admin-framework/)
+
+## Note For Mentors
+
+Mentors can review raw evidence directly in the detailed task pages linked from the table above. The current verified evidence set is concentrated in the Billing Alarm Setup and IAM Admin Framework pages, where screenshots are arranged in exact step order.

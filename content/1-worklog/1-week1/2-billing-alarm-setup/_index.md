@@ -1,42 +1,42 @@
 ---
 title: "CloudWatch Billing Alarm Setup"
-date: 2026-04-20
+date: 2026-04-21
 weight: 2
+summary: "Configured a CloudWatch Billing Alarm in us-east-1 with a 10 USD threshold and SNS email notification."
 chapter: false
 ---
 
 # CloudWatch Billing Alarm Setup
 
-## Core Principle
+## Technical Context
 
-Before configuring any billing-related alarm, you must always verify the AWS Region.
+This task establishes the first cost-governance control for the internship AWS account. A billing alarm is required to detect abnormal spending early and to reduce the risk of uncontrolled charges during workshop and project experimentation.
 
-**Critical rule:** Billing metrics for CloudWatch are centralized in **N. Virginia (`us-east-1`)**. If you create or review the billing alarm in another Region, the `EstimatedCharges` metric may not appear correctly.
+From an operational perspective, this task is important because billing monitoring should be enabled before provisioning additional services. It is also a practical example of preventive governance for a personal AWS environment.
+
+## Implementation Steps
+
+### Step 1: Confirm the Billing Region
+
+Before starting the configuration, switch the AWS Console Region to N. Virginia, region code us-east-1. This is mandatory because the CloudWatch billing metric EstimatedCharges is centralized in this Region.
 
 ![Switch Region to N. Virginia](/images/1-worklog/week1/billing/region-us-east-1.png)
 
-## Step 1: Sign in to AWS Console with the Root Account
+### Step 2: Sign in with the Root Account
 
-Sign in to the AWS Management Console using the **Root account**.
-
-You should use the Root account in this step because billing preferences are managed at the account level.
+Sign in to the AWS Management Console by using the Root account. This step is required because billing preferences are configured at the account level.
 
 ![Root account sign-in](/images/1-worklog/week1/billing/root-login.png)
 
-## Step 2: Find Billing and Cost Management
+### Step 3: Open Billing and Cost Management
 
-Search for and open **Billing and Cost Management** from the AWS Console.
+Search for and open Billing and Cost Management from the AWS Console.
 
 ![Billing and Cost Management dashboard](/images/1-worklog/week1/billing/billing-dashboard.png)
 
-## Step 3: Open Billing Preferences and Enable Notifications
+### Step 4: Enable Billing Preferences
 
-In the left navigation menu, choose **Billing preferences**.
-
-Then enable:
-
-- **Receive PDF invoice by email**
-- **Receive Free Tier Usage Alerts**
+Open Billing preferences from the left navigation menu and enable the notification options required for monitoring. At this stage, turn on Receive PDF invoice by email and Receive Free Tier Usage Alerts.
 
 ![Billing preferences](/images/1-worklog/week1/billing/billing-preferences.png)
 
@@ -44,79 +44,89 @@ Then enable:
 
 ![Billing preference saved successfully](/images/1-worklog/week1/billing/invoice-success.png)
 
-## Step 4: Open CloudWatch
+### Step 5: Search for CloudWatch
 
-Type **CloudWatch** into the AWS search bar and open the service.
+Search for CloudWatch from the AWS Console search bar and open the service.
 
 ![CloudWatch metric selection](/images/1-worklog/week1/billing/cloudwatch-metric-selection.png)
 
-## Step 5: Create a New Alarm
+### Step 6: Open the Alarms Page
 
-Inside CloudWatch, follow this path:
+Inside CloudWatch, open the Alarms section from the navigation menu.
 
-- **Alarms**
-- **Create Alarm**
-- **Select metric**
+![CloudWatch Alarms menu](/images/1-worklog/week1/billing/alarm-graph.png)
+
+### Step 7: Start Alarm Creation
+
+From the Alarms page, choose Create alarm.
 
 ![Create alarm settings](/images/1-worklog/week1/billing/create-alarm-settings.png)
 
-## Step 6: Select the Billing Metric
+### Step 8: Select the Billing Metric
 
-Choose:
-
-- **Billing**
-- **Total Estimated Charge**
-
-Then:
-
-- tick **EstimatedCharges**
-- click **Select metric**
+In the metric selection flow, choose Billing, then Total Estimated Charge, then EstimatedCharges.
 
 ![Estimated charge metric selected](/images/1-worklog/week1/billing/estimated-charge-metric.png)
 
-## Step 7: Configure the Alarm Condition
+### Step 9: Configure the Alarm Threshold
 
-In the **Conditions** section, configure:
-
-- **Comparison operator:** `Greater/Equal`
-- **Threshold:** `10 USD`
+In the Conditions section, choose Greater or Equal and enter 10 USD as the threshold.
 
 ![Threshold set to Greater/Equal](/images/1-worklog/week1/billing/threshold-settings.png)
 
-## Step 8: Configure Notification with SNS
+### Step 10: Configure the SNS Notification
 
-In the **Notification** section:
-
-- choose **Create new topic**
-- enter your email address
-- use the SNS topic for billing alerts
+In the Notification section, create a new SNS topic and add the notification email address. This email subscription will be used to receive billing alerts.
 
 ![SNS notification configuration](/images/1-worklog/week1/billing/sns-notification.png)
 
-## Step 9: Confirm the Email Subscription
+After the alarm is submitted, AWS displays a success message showing that the alarm was created and that the SNS subscription may still be waiting for email confirmation.
 
-AWS will send a confirmation email to the address you entered.
+![Alarm created successfully](/images/1-worklog/week1/billing/alarm-ok-state.png)
 
-You must:
+### Step 11: Confirm the Email Subscription
 
-- open the email
-- click **Confirm Subscription**
-
-If you skip this step, the alarm is created, but the email notification channel is not enabled.
+After the SNS topic is created, AWS sends a confirmation email. Open that email and click Confirm Subscription. Without this confirmation, the billing alarm exists, but the email notification channel remains disabled.
 
 ![Email confirmation step](/images/1-worklog/week1/billing/confirm-subscription.png)
 
 ![Subscription confirmed successfully](/images/1-worklog/week1/billing/subscription-confirmed.png)
 
-## Step 10: Verify the Alarm Status
+### Step 12: Verify That the Alarm Was Created Successfully
 
-Review the alarm graph and confirm that the billing alarm is in the **OK** state.
+After email confirmation is completed, return to CloudWatch and verify that the billing alarm is listed correctly. At this stage, the alarm setup is complete and the notification path is active.
 
-![CloudWatch billing alarm graph](/images/1-worklog/week1/billing/alarm-graph.png)
+## Critical Configuration
 
-![CloudWatch alarm in OK state](/images/1-worklog/week1/billing/alarm-ok-state.png)
+| Parameter | Value |
+| --- | --- |
+| Region | us-east-1 |
+| Metric Namespace | Billing |
+| Metric Group | Total Estimated Charge |
+| Metric | EstimatedCharges |
+| Alarm Condition | Greater or Equal |
+| Threshold | 10 USD |
+| Notification Channel | Amazon SNS |
+| SNS Topic | AWS-Billing-Alert-HSmart |
 
-## Worklog Record
+## Evidence & Verification
 
-**Log image code:** `1.1`  
-**Threshold:** `10 USD`
+### Verification Checklist
+
+- Confirm that the EstimatedCharges metric is visible under the Billing namespace.
+- Confirm that the billing alarm is created successfully in CloudWatch.
+- Confirm that the success message is displayed after alarm creation.
+- Confirm that the SNS email subscription has already been verified or is pending confirmation.
+
+![Alarm created successfully](/images/1-worklog/week1/billing/alarm-ok-state.png)
+
+Evidence code: 1.1
+Recorded threshold: 10 USD
+
+## Troubleshooting
+
+- Issue: EstimatedCharges does not appear in CloudWatch.
+  Resolution: Switch the active AWS Region to us-east-1 and re-open the Billing metric namespace.
+
+- Issue: No billing email is received after the alarm is created.
+  Resolution: Open the SNS confirmation email and click Confirm Subscription. The alarm notification channel is not active until the subscription is confirmed.
