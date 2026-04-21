@@ -7,6 +7,98 @@ chapter: false
 
 # Week 1
 
+## Tasks To Be Carried Out This Week
+
+<table>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Task</th>
+      <th>Start Date</th>
+      <th>Completion Date</th>
+      <th>Reference Material</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>
+        <ul>
+          <li>Get acquainted with FCJ members</li>
+          <li>Read and take note of internship unit rules and regulations</li>
+        </ul>
+      </td>
+      <td>08/11/2025</td>
+      <td>08/11/2025</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        <ul>
+          <li><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">Learn about AWS and its types of services</a></li>
+          <li>Compute</li>
+          <li>Storage</li>
+          <li>Networking</li>
+          <li>Database</li>
+          <li>More core AWS service categories</li>
+        </ul>
+      </td>
+      <td>08/12/2025</td>
+      <td>08/12/2025</td>
+      <td><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">https://cloudjourney.awsstudygroup.com/</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>
+        <ul>
+          <li><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">Create AWS Free Tier account</a></li>
+          <li><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">Learn about AWS Console and AWS CLI</a></li>
+          <li><strong>Practice:</strong></li>
+          <li><a href="#step-1-set-up-cost-monitoring-with-cloudwatch-billing-alarm">Create billing monitoring for the AWS account</a></li>
+          <li><a href="#step-2-build-the-iam-admin-framework">Create IAM admin governance for daily usage</a></li>
+          <li><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">Install and configure AWS CLI</a></li>
+          <li><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">Learn how to use AWS CLI</a></li>
+        </ul>
+      </td>
+      <td>08/13/2025</td>
+      <td>08/13/2025</td>
+      <td><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">https://cloudjourney.awsstudygroup.com/</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>
+        <ul>
+          <li><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">Learn basic EC2</a></li>
+          <li>Instance types</li>
+          <li>AMI</li>
+          <li>EBS</li>
+          <li>Other EC2 building blocks</li>
+          <li><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">Learn SSH connection methods to EC2</a></li>
+          <li><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">Learn about Elastic IP</a></li>
+        </ul>
+      </td>
+      <td>08/14/2025</td>
+      <td>08/15/2025</td>
+      <td><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">https://cloudjourney.awsstudygroup.com/</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>
+        <ul>
+          <li><strong>Practice:</strong></li>
+          <li><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">Launch an EC2 instance</a></li>
+          <li><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">Connect via SSH</a></li>
+          <li><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">Attach an EBS volume</a></li>
+        </ul>
+      </td>
+      <td>08/15/2025</td>
+      <td>08/15/2025</td>
+      <td><a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreferrer">https://cloudjourney.awsstudygroup.com/</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ## Overview
 
 During Week 1, I focused on establishing the foundational governance layer for my internship environment. The primary objective was to build two safety controls before starting deeper cloud implementation for the **H-Smart** project:
@@ -23,6 +115,13 @@ This work was completed in the context of an individual internship project for a
 - **Student Profile:** Final-year Software Engineering student, HCMUT
 - **Technical Focus:** AWS fundamentals, IAM, CloudWatch, governance, and operational readiness
 - **Week 1 Goal:** Establish cost barriers and user administration controls before provisioning larger workloads
+
+## Detailed Guides In This Week
+
+The two technical guides completed and documented in detail for this week are:
+
+- [CloudWatch Billing Alarm Setup](#step-1-set-up-cost-monitoring-with-cloudwatch-billing-alarm)
+- [IAM Admin Framework Setup](#step-2-build-the-iam-admin-framework)
 
 ## Core Principle
 
