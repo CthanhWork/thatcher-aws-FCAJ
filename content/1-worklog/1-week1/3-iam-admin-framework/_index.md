@@ -20,19 +20,19 @@ I treated this as the first identity governance checkpoint for the account. Even
 
 Search for and open IAM from the AWS Console.
 
-![AWS Console search result showing the IAM service](/images/1-worklog/week1/iam-admin/find-iam.png)
+![AWS Console search result showing the IAM service](../../../images/1-worklog/week1/iam-admin/find-iam.png)
 
 ### Step 2: Create the Administrative Group
 
 Create a new IAM group named FCAJ-Admins. This group acts as the administrative container for the internship account.
 
-![IAM group creation page for the FCAJ-Admins group](/images/1-worklog/week1/iam-admin/create-group.png)
+![IAM group creation page for the FCAJ-Admins group](../../../images/1-worklog/week1/iam-admin/create-group.png)
 
 ### Step 3: Attach the Required Policy
 
 Attach the AWS managed policy AdministratorAccess to the FCAJ-Admins group.
 
-![Policy attachment step showing AdministratorAccess for the admin group](/images/1-worklog/week1/iam-admin/attach-admin-access.png)
+![Policy attachment step showing AdministratorAccess for the admin group](../../../images/1-worklog/week1/iam-admin/attach-admin-access.png)
 
 ### Step 4: Create the Administrative User
 
@@ -41,25 +41,25 @@ Start creating a new IAM user and define the primary administrator identity:
 - user name: thanh-admin
 - access type: console access
 
-![IAM user creation screen for the thanh-admin identity](/images/1-worklog/week1/iam-admin/create-user-start.png)
+![IAM user creation screen for the thanh-admin identity](../../../images/1-worklog/week1/iam-admin/create-user-start.png)
 
 ### Step 5: Configure Console Credentials
 
 Enable console access and define a custom password for the IAM administrator user.
 
-![Console access configuration with a custom password for thanh-admin](/images/1-worklog/week1/iam-admin/user-console-password.png)
+![Console access configuration with a custom password for thanh-admin](../../../images/1-worklog/week1/iam-admin/user-console-password.png)
 
 ### Step 6: Add the User to the Admin Group
 
 Assign thanh-admin to the FCAJ-Admins group so that permissions are inherited through group membership.
 
-![IAM workflow assigning thanh-admin to the FCAJ-Admins group](/images/1-worklog/week1/iam-admin/add-user-to-group.png)
+![IAM workflow assigning thanh-admin to the FCAJ-Admins group](../../../images/1-worklog/week1/iam-admin/add-user-to-group.png)
 
 ### Step 7: Verify the Group Membership
 
 Review the result and verify that the user is listed correctly under the admin group.
 
-![IAM user group summary showing thanh-admin under FCAJ-Admins](/images/1-worklog/week1/iam-admin/group-user-summary.png)
+![IAM user group summary showing thanh-admin under FCAJ-Admins](../../../images/1-worklog/week1/iam-admin/group-user-summary.png)
 
 ### Step 8: Configure the Account Alias
 

@@ -20,77 +20,77 @@ I selected a threshold of 10 USD because it is a conservative safety point for a
 
 Before starting the configuration, switch the AWS Console Region to N. Virginia, region code us-east-1. This is mandatory because the CloudWatch billing metric EstimatedCharges is centralized in this Region.
 
-![AWS Console region selector set to US East N Virginia for billing metrics](/images/1-worklog/week1/billing/region-us-east-1.png)
+![AWS Console region selector set to US East N Virginia for billing metrics](../../../images/1-worklog/week1/billing/region-us-east-1.png)
 
 ### Step 2: Sign in with the Root Account
 
 Sign in to the AWS Management Console by using the Root account. This step is required because billing preferences are configured at the account level.
 
-![AWS root user sign-in screen used before enabling billing preferences](/images/1-worklog/week1/billing/root-login.png)
+![AWS root user sign-in screen used before enabling billing preferences](../../../images/1-worklog/week1/billing/root-login.png)
 
 ### Step 3: Open Billing and Cost Management
 
 Search for and open Billing and Cost Management from the AWS Console.
 
-![Billing and Cost Management console opened from the AWS Console](/images/1-worklog/week1/billing/billing-dashboard.png)
+![Billing and Cost Management console opened from the AWS Console](../../../images/1-worklog/week1/billing/billing-dashboard.png)
 
 ### Step 4: Enable Billing Preferences
 
 Open Billing preferences from the left navigation menu and enable the notification options required for monitoring. At this stage, turn on Receive PDF invoice by email and Receive Free Tier Usage Alerts.
 
-![Billing preferences page in Billing and Cost Management](/images/1-worklog/week1/billing/billing-preferences.png)
+![Billing preferences page in Billing and Cost Management](../../../images/1-worklog/week1/billing/billing-preferences.png)
 
-![Billing preference option to receive PDF invoice by email](/images/1-worklog/week1/billing/pdf-invoice-email.png)
+![Billing preference option to receive PDF invoice by email](../../../images/1-worklog/week1/billing/pdf-invoice-email.png)
 
-![Confirmation message after saving billing preferences](/images/1-worklog/week1/billing/invoice-success.png)
+![Confirmation message after saving billing preferences](../../../images/1-worklog/week1/billing/invoice-success.png)
 
 ### Step 5: Search for CloudWatch
 
 Search for CloudWatch from the AWS Console search bar and open the service.
 
-![AWS Console search result showing CloudWatch](/images/1-worklog/week1/billing/cloudwatch-metric-selection.png)
+![AWS Console search result showing CloudWatch](../../../images/1-worklog/week1/billing/cloudwatch-metric-selection.png)
 
 ### Step 6: Open the Alarms Page
 
 Inside CloudWatch, open the Alarms section from the navigation menu.
 
-![CloudWatch navigation menu with Alarms selected](/images/1-worklog/week1/billing/alarm-graph.png)
+![CloudWatch navigation menu with Alarms selected](../../../images/1-worklog/week1/billing/alarm-graph.png)
 
 ### Step 7: Start Alarm Creation
 
 From the Alarms page, choose Create alarm.
 
-![CloudWatch alarms page with Create alarm button visible](/images/1-worklog/week1/billing/create-alarm-settings.png)
+![CloudWatch alarms page with Create alarm button visible](../../../images/1-worklog/week1/billing/create-alarm-settings.png)
 
 ### Step 8: Select the Billing Metric
 
 In the metric selection flow, choose Billing, then Total Estimated Charge, then EstimatedCharges.
 
-![Billing metric selection showing EstimatedCharges under Total Estimated Charge](/images/1-worklog/week1/billing/estimated-charge-metric.png)
+![Billing metric selection showing EstimatedCharges under Total Estimated Charge](../../../images/1-worklog/week1/billing/estimated-charge-metric.png)
 
 ### Step 9: Configure the Alarm Threshold
 
 In the Conditions section, choose Greater or Equal and enter 10 USD as the threshold.
 
-![Alarm threshold configuration set to Greater or Equal and 10 USD](/images/1-worklog/week1/billing/threshold-settings.png)
+![Alarm threshold configuration set to Greater or Equal and 10 USD](../../../images/1-worklog/week1/billing/threshold-settings.png)
 
 ### Step 10: Configure the SNS Notification
 
 In the Notification section, create a new SNS topic and add the notification email address. This email subscription will be used to receive billing alerts.
 
-![SNS topic configuration for CloudWatch billing email notification](/images/1-worklog/week1/billing/sns-notification.png)
+![SNS topic configuration for CloudWatch billing email notification](../../../images/1-worklog/week1/billing/sns-notification.png)
 
 After the alarm is submitted, AWS displays a success message showing that the alarm was created and that the SNS subscription may still be waiting for email confirmation.
 
-![CloudWatch success banner after alarm creation with SNS confirmation still pending](/images/1-worklog/week1/billing/alarm-ok-state.png)
+![CloudWatch success banner after alarm creation with SNS confirmation still pending](../../../images/1-worklog/week1/billing/alarm-ok-state.png)
 
 ### Step 11: Confirm the Email Subscription
 
 After the SNS topic is created, AWS sends a confirmation email. Open that email and click Confirm Subscription. Without this confirmation, the billing alarm exists, but the email notification channel remains disabled.
 
-![SNS subscription confirmation email sent after alarm creation](/images/1-worklog/week1/billing/confirm-subscription.png)
+![SNS subscription confirmation email sent after alarm creation](../../../images/1-worklog/week1/billing/confirm-subscription.png)
 
-![AWS page confirming that the SNS email subscription was verified](/images/1-worklog/week1/billing/subscription-confirmed.png)
+![AWS page confirming that the SNS email subscription was verified](../../../images/1-worklog/week1/billing/subscription-confirmed.png)
 
 ### Step 12: Verify That the Alarm Was Created Successfully
 
@@ -111,7 +111,7 @@ After email confirmation is completed, return to CloudWatch and verify that the 
 - Confirm that the success message is displayed after alarm creation.
 - Confirm that the SNS email subscription has already been verified or is pending confirmation.
 
-![CloudWatch billing alarm created with a 10 USD threshold and SNS warning pending confirmation](/images/1-worklog/week1/billing/alarm-ok-state.png)
+![CloudWatch billing alarm created with a 10 USD threshold and SNS warning pending confirmation](../../../images/1-worklog/week1/billing/alarm-ok-state.png)
 
 Evidence code: 1.1
 Recorded threshold: 10 USD
