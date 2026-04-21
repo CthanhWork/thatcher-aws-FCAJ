@@ -35,100 +35,148 @@ If I create or review the billing alarm in another region, the **EstimatedCharge
 
 ## Step 1: Set Up Cost Monitoring with CloudWatch Billing Alarm
 
-### 1.1 Sign in with the Root Account
+This section guides you through creating a billing alarm so you can receive an early warning when your AWS usage is approaching an unwanted cost threshold.
 
-The initial billing configuration must be performed using the **Root account**, because only the Root user has access to the full billing preferences area required for enabling billing alerts.
+### 1.1 Sign in to AWS Console with the Root Account
+
+First, sign in to the AWS Management Console using the **Root account**.
+
+You should use the Root account in this step because billing preferences are managed at the account level, and this area is typically configured from the main billing context of the AWS account.
 
 ![Root account sign-in](/images/1-worklog/week1/billing/root-login.png)
 
-### 1.2 Open Billing and Cost Management
+### 1.2 Find Billing and Cost Management
 
-After signing in, I navigated to **Billing and Cost Management** to configure billing-related notification preferences before creating the alarm.
+After signing in, search for and open **Billing and Cost Management** from the AWS Console.
+
+This is the place where you enable account-level billing notifications before creating the CloudWatch alarm.
 
 ![Billing and Cost Management dashboard](/images/1-worklog/week1/billing/billing-dashboard.png)
 
-### 1.3 Enable Billing Preferences
+### 1.3 Open Billing Preferences and Enable Notifications
 
-In **Billing Preferences**, I enabled the notification options required for proactive monitoring:
+In the left navigation menu, choose:
 
-- **Receive Billing Alerts**
+- **Billing preferences**
+
+Then enable the required options:
+
+- **Receive PDF invoice by email**
 - **Receive Free Tier Usage Alerts**
 
-These settings are mandatory because CloudWatch cannot trigger billing alarms properly unless billing alerts are enabled at the account level.
+These options help you maintain visibility into account usage and billing events. In practice, enabling billing-related notifications early is an important governance step for any internship or personal AWS environment.
 
 ![Billing preferences](/images/1-worklog/week1/billing/billing-preferences.png)
 
-I also verified that invoice and email-related settings were configured correctly as part of the account notification baseline.
+![Receive PDF invoice by email](/images/1-worklog/week1/billing/pdf-invoice-email.png)
 
-![PDF invoice by email](/images/1-worklog/week1/billing/pdf-invoice-email.png)
+![Billing preference saved successfully](/images/1-worklog/week1/billing/invoice-success.png)
 
-![Invoice setting confirmed](/images/1-worklog/week1/billing/invoice-success.png)
+### 1.4 Open CloudWatch
 
-### 1.4 Open CloudWatch and Select the Correct Billing Metric
+Next, type **CloudWatch** into the AWS search bar and open the service.
 
-After enabling billing preferences, I moved to **Amazon CloudWatch** and created a new alarm based on the billing metric:
+Before creating the alarm, make sure you are in the correct Region:
 
-- **Metric namespace:** `Billing`
-- **Metric group:** `Total Estimated Charge`
-- **Metric name:** `EstimatedCharges`
-- **Statistic:** `Maximum`
-- **Period:** `6 Hours`
+- **N. Virginia (`us-east-1`)**
 
-Using `Maximum` with a `6 Hours` period helps detect cost growth early enough to react before accidental charges increase significantly.
+This point is critical because AWS billing metrics are centralized in this Region. If you stay in another Region, the billing metric may not appear correctly.
+
+![Switch Region to N. Virginia](/images/1-worklog/week1/billing/region-us-east-1.png)
+
+### 1.5 Create a New Alarm
+
+Inside CloudWatch, follow this path:
+
+- **Alarms**
+- **Create Alarm**
+- **Select metric**
 
 ![CloudWatch metric selection](/images/1-worklog/week1/billing/cloudwatch-metric-selection.png)
 
+### 1.6 Select the Billing Metric
+
+In the metric browser, choose:
+
+- **Billing**
+- **Total Estimated Charge**
+
+Then:
+
+- tick **EstimatedCharges**
+- click **Select metric**
+
+This metric tracks the estimated billing amount accumulated for the account.
+
 ![Estimated charge metric selected](/images/1-worklog/week1/billing/estimated-charge-metric.png)
 
-### 1.5 Configure Alarm Conditions
+### 1.7 Configure the Alarm Condition
 
-I configured the alarm condition as a static threshold:
+In the **Conditions** section, configure the threshold as follows:
 
-- **Threshold type:** `Static`
-- **Condition:** `Greater/Equal`
-- **Value:** `10 USD`
+- **Comparison operator:** `Greater/Equal`
+- **Threshold value:** `10`
+- **Unit:** `USD`
 
-This threshold acts as an initial cost barrier for a student internship environment, where infrastructure usage should remain controlled and predictable.
+This means CloudWatch will trigger the alarm when the estimated account charge is greater than or equal to **10 USD**.
+
+For a student internship environment, this is a practical early-warning barrier that helps prevent accidental overspending.
 
 ![Alarm base configuration](/images/1-worklog/week1/billing/create-alarm-settings.png)
 
-![Threshold set to greater than or equal](/images/1-worklog/week1/billing/threshold-settings.png)
+![Threshold set to Greater/Equal](/images/1-worklog/week1/billing/threshold-settings.png)
 
-### 1.6 Create SNS Notification
+### 1.8 Configure Notification with SNS
 
-To receive alerts by email, I created a new **Amazon SNS Topic**:
+In the **Notification** section:
 
-- **Suggested topic name:** `AWS-Billing-Alert-HSmart`
+- choose **Create new topic**
+- enter a topic name, for example: `AWS-Billing-Alert-HSmart`
+- enter your email address to receive billing alerts
 
-Then I added my email subscription so that CloudWatch can send billing notifications whenever the estimated cost crosses the defined threshold.
+AWS will use Amazon SNS to send the notification whenever the billing alarm changes to the alert state.
 
 ![SNS notification configuration](/images/1-worklog/week1/billing/sns-notification.png)
 
-### 1.7 Confirm Email Subscription
+### 1.9 Confirm the Subscription Email
 
-This is a critical operational step:
+This is the most important operational note in the billing setup:
 
-- After creating the SNS topic, AWS sends a confirmation email.
-- The email recipient **must click `Confirm subscription`**.
-- Without this confirmation, the billing alarm may change state internally, but **no email alert will be delivered**.
+- AWS will send a confirmation email to the address you entered
+- you **must open that email**
+- you **must click Confirm Subscription**
+
+If you skip this confirmation step, the billing alarm may be created successfully, but the email notification channel will **not be enabled**. As a result, the alarm exists, but no warning email is delivered.
 
 ![Email confirmation step](/images/1-worklog/week1/billing/confirm-subscription.png)
 
 ![Subscription confirmed successfully](/images/1-worklog/week1/billing/subscription-confirmed.png)
 
-### 1.8 Verify Alarm Status
+### 1.10 Verify the Alarm Status
 
-Finally, I verified that the CloudWatch alarm was created successfully and remained in the **OK** state under normal usage.
+After completing the setup, review the alarm graph and verify that the alarm is in the **OK** state.
 
-This is the recommended evidence for the report because it confirms:
+This confirms that:
 
-- the metric is available,
-- the threshold is configured correctly,
-- the monitoring pipeline is active.
+- the billing metric is available
+- the threshold has been applied correctly
+- the notification workflow is ready to operate
 
 ![CloudWatch billing alarm graph](/images/1-worklog/week1/billing/alarm-graph.png)
 
 ![CloudWatch alarm in OK state](/images/1-worklog/week1/billing/alarm-ok-state.png)
+
+### 1.11 Worklog Evidence
+
+**Log image code:** `1.1`  
+**Recorded parameter:** `Threshold: 10 USD`
+
+Recommended evidence for the internship report:
+
+- screenshot of the metric selection screen
+- screenshot of the threshold configuration
+- screenshot of the SNS notification step
+- screenshot of the CloudWatch alarm graph in `OK` state
 
 ## Step 2: Build the IAM Admin Framework
 
