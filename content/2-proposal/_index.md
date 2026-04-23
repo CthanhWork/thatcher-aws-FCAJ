@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Internship Proposal
-
 ## Introduction
 
 My name is **Hoang Chi Thanh**, and I am honored to join the **Workforce Bootcamp - First Cloud AI Journey** internship program at **Cong ty TNHH Amazon Web Services Viet Nam**. During my internship period from **17/04/2025 to 10/07/2026**, I aim to strengthen both my technical foundation and practical engineering mindset through hands-on cloud learning, real-world problem solving, and continuous self-improvement.

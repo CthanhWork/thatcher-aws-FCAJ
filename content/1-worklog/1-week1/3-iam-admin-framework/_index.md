@@ -6,8 +6,6 @@ summary: "Created an IAM administration baseline with FCAJ-Admins, Administrator
 chapter: false
 ---
 
-# IAM Admin Framework Setup
-
 ## Why I Did This
 
 This task implemented an IAM administration baseline for the internship AWS environment. The immediate goal was to stop relying on the root account for daily work and move to a dedicated administrator identity that is easier to manage and safer to audit.
@@ -16,60 +14,61 @@ I treated this as the first identity governance checkpoint for the account. Even
 
 ## Implementation Steps
 
-### Step 1: Open IAM
+### Step 1: Access IAM Service
 
 Search for and open IAM from the AWS Console.
 
 ![AWS Console search result showing the IAM service](../../../images/1-worklog/week1/iam-admin/find-iam.png)
 
-### Step 2: Create the Administrative Group
+### Step 2: Create Admin Group
 
 Create a new IAM group named FCAJ-Admins. This group acts as the administrative container for the internship account.
 
 ![IAM group creation page for the FCAJ-Admins group](../../../images/1-worklog/week1/iam-admin/create-group.png)
 
-### Step 3: Attach the Required Policy
+### Step 3: Attach AdministratorAccess Policy
 
 Attach the AWS managed policy AdministratorAccess to the FCAJ-Admins group.
 
 ![Policy attachment step showing AdministratorAccess for the admin group](../../../images/1-worklog/week1/iam-admin/attach-admin-access.png)
 
-### Step 4: Create the Administrative User
+### Step 4: Create Admin User and Enable Console Access
 
-Start creating a new IAM user and define the primary administrator identity:
+In the user creation wizard, define the main administrator identity for the internship account. In this flow, I entered the user name thanh-admin and enabled access to the AWS Management Console so the account can be used for daily administration instead of relying on the root user.
 
-- user name: thanh-admin
-- access type: console access
+The two screenshots below belong to the same creation flow. The first screen captures the user details, and the second screen captures the console access configuration with a custom password.
 
 ![IAM user creation screen for the thanh-admin identity](../../../images/1-worklog/week1/iam-admin/create-user-start.png)
-
-### Step 5: Configure Console Credentials
-
-Enable console access and define a custom password for the IAM administrator user.
-
 ![Console access configuration with a custom password for thanh-admin](../../../images/1-worklog/week1/iam-admin/user-console-password.png)
 
-### Step 6: Add the User to the Admin Group
+### Step 5: Assign User to Group
 
 Assign thanh-admin to the FCAJ-Admins group so that permissions are inherited through group membership.
 
 ![IAM workflow assigning thanh-admin to the FCAJ-Admins group](../../../images/1-worklog/week1/iam-admin/add-user-to-group.png)
 
-### Step 7: Verify the Group Membership
+### Step 6: Final Review and Verification
 
-Review the result and verify that the user is listed correctly under the admin group.
+Review the result and verify that the user was created successfully and is listed under the correct admin group.
 
 ![IAM user group summary showing thanh-admin under FCAJ-Admins](../../../images/1-worklog/week1/iam-admin/group-user-summary.png)
 
-### Step 8: Configure the Account Alias
+### Step 7: Create Account Alias
 
-Configure the account alias hsmart-intern-thanh so that the console sign-in URL becomes easier to remember and more professional for daily use.
+The account alias is still part of the target IAM baseline, but I do not yet have a dedicated screenshot for this step. The intended alias is hsmart-intern-thanh so the sign-in URL becomes easier to remember and more professional for daily use.
+
+Expected sign-in URL:
+
+```text
+https://hsmart-intern-thanh.signin.aws.amazon.com/console
+```
 
 ## What I Learned
 
 - Group-based permission assignment is easier to maintain than attaching permissions directly to each user.
 - An IAM administrator user is still different from the root user, which means daily operations can be moved away from the highest-risk identity.
 - A readable account alias improves operational usability because the team can remember the sign-in URL more easily than a 12-digit account ID.
+- MFA should be enabled for the administrator account as soon as possible because password-only access is still a significant security risk.
 
 ## Evidence and Verification
 
@@ -81,7 +80,7 @@ Configure the account alias hsmart-intern-thanh so that the console sign-in URL 
 - Confirm that the user is assigned to the correct group.
 - Confirm that the account alias is configured for the account.
 
-Evidence currently available: group creation, policy attachment, user creation, console access configuration, and user-to-group membership. I still need to capture a dedicated screenshot for the account alias step in a later session.
+Evidence currently available: service access, group creation, policy attachment, user creation, console access configuration, and user-to-group membership. I still need to capture a dedicated screenshot for the account alias step in a later session.
 
 ## Challenges and Troubleshooting
 

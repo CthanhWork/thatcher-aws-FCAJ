@@ -6,8 +6,6 @@ summary: "Configured a CloudWatch Billing Alarm in us-east-1 with a 10 USD thres
 chapter: false
 ---
 
-# CloudWatch Billing Alarm Setup
-
 ## Why I Did This
 
 This task established the first cost-governance control for my internship AWS account. I wanted an early warning mechanism before creating more services because a student environment can accumulate unexpected cost very quickly when experiments are spread across multiple services.

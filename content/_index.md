@@ -4,8 +4,6 @@ date: 2026-04-20
 chapter: false
 ---
 
-# FCJ Internship Report
-
 Welcome to my internship report and personal worklog for the AWS First Cloud Journey program.
 
 ## Student Information

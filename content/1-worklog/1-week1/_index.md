@@ -2,15 +2,13 @@
 title: "Week 1"
 date: 2026-04-20
 weight: 1
-summary: "Week 1 documented internship orientation, team alignment, and the first AWS governance controls for the H-Smart environment."
+summary: "Week 1 documented FCAJ orientation, Module 1 learning, hands-on IAM and Billing Alarm practice, Module 2 video study, and the first AWS governance controls for H-Smart."
 chapter: false
 ---
 
-# Week 1
-
 ## Weekly Objective
 
-This week focused on understanding the FCAJ workflow and establishing the first governance controls for the AWS internship environment. The two verified technical outputs were a CloudWatch Billing Alarm for early cost visibility and an IAM Admin Framework to reduce daily dependence on the root account while preparing for H-Smart.
+This week focused on understanding the FCAJ workflow, building foundational AWS knowledge through Module 1 and Module 2, and establishing the first governance controls for the internship environment. The technical outputs that came out of this learning cycle were a CloudWatch Billing Alarm for early cost visibility and an IAM Admin Framework to reduce daily dependence on the root account while preparing for H-Smart.
 
 ## Tasks To Be Carried Out This Week
 
@@ -31,6 +29,7 @@ This week focused on understanding the FCAJ workflow and establishing the first 
         <ul>
           <li><a href="1-day2-orientation-research/">Research FCAJ tasks and internship expectations</a></li>
           <li><a href="1-day2-orientation-research/">Team meeting to align direction, consolidate project knowledge, and plan next meetings</a></li>
+          <li><a href="1-day2-orientation-research/">Study Module 1 videos to build AWS foundation knowledge</a></li>
         </ul>
       </td>
       <td>04/20/2026</td>
@@ -39,6 +38,8 @@ This week focused on understanding the FCAJ workflow and establishing the first 
         <ul>
           <li><a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html">Overview of Amazon Web Services</a></li>
           <li><a href="https://docs.aws.amazon.com/hands-on/latest/getting-started-with-aws-management-console/getting-started-with-aws-management-console.html">Getting Started with the AWS Management Console</a></li>
+          <li><a href="https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions-availability-zones.html">AWS Regions and Availability Zones</a></li>
+          <li><a href="https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html">AWS Support Plans</a></li>
         </ul>
       </td>
     </tr>
@@ -46,8 +47,8 @@ This week focused on understanding the FCAJ workflow and establishing the first 
       <td>3</td>
       <td>
         <ul>
-          <li><a href="2-billing-alarm-setup/">CloudWatch Billing Alarm Setup</a></li>
-          <li><a href="3-iam-admin-framework/">IAM Admin Framework Setup</a></li>
+          <li><a href="2-billing-alarm-setup/">Practice CloudWatch Billing Alarm Setup</a></li>
+          <li><a href="3-iam-admin-framework/">Practice IAM Admin Framework Setup</a></li>
         </ul>
       </td>
       <td>04/21/2026</td>
@@ -57,15 +58,27 @@ This week focused on understanding the FCAJ workflow and establishing the first 
           <li><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html">Create a billing alarm to monitor your estimated AWS charges</a></li>
           <li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html">IAM user groups</a></li>
           <li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/console-account-alias.html">Using an alias for your AWS account ID</a></li>
+          <li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html">Security best practices in IAM</a></li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>4</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>
+        <ul>
+          <li>Study Module 2 videos about VPC, VPC security, multi-VPC design, VPN, Direct Connect, and load balancing</li>
+        </ul>
+      </td>
+      <td>04/22/2026</td>
+      <td>04/22/2026</td>
+      <td>
+        <ul>
+          <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html">What is Amazon VPC</a></li>
+          <li><a href="https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html">What is AWS Site-to-Site VPN</a></li>
+          <li><a href="https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html">What is Direct Connect</a></li>
+          <li><a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html">What is Elastic Load Balancing</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>5</td>
@@ -93,9 +106,10 @@ This week focused on understanding the FCAJ workflow and establishing the first 
 
 ## Detailed Technical Worklogs
 
+- [Day 2: Orientation, Team Meeting, and Module 1 Learning](1-day2-orientation-research/)
 - [CloudWatch Billing Alarm Setup](2-billing-alarm-setup/)
 - [IAM Admin Framework Setup](3-iam-admin-framework/)
 
 ## Note For Mentors
 
-Mentors can review raw evidence directly in the detailed task pages linked from the table above. Each detailed page now records implementation evidence, why the task was done, what was learned, concrete troubleshooting notes, and how the result can later be applied to H-Smart.
+Mentors can review raw evidence directly in the detailed task pages linked from the table above. The current detailed evidence is concentrated in the Day 2 page and the two Day 3 practice pages for Billing Alarm and IAM.
