@@ -1,6 +1,6 @@
 ---
 title: "Day 1 - AWS Systems Manager Session Manager Setup"
-date: 2026-05-04
+date: 2026-04-27
 weight: 1
 summary: "Created an EC2 instance for H-Smart and connected to it securely through AWS Systems Manager Session Manager without opening SSH."
 chapter: false
