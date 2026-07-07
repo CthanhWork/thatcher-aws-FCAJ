@@ -1,0 +1,53 @@
+/* PJAX loading indicator */
+body.pjax-loading {
+  cursor: wait;
+}
+
+body.pjax-loading #body-inner {
+  opacity: 0.6;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* Smooth content transition */
+#body-inner {
+  transition: opacity 0.3s ease;
+}
+
+/* Loading bar at top of page */
+body.pjax-loading::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00bcd4 0%, #2196f3 50%, #00bcd4 100%);
+  background-size: 200% 100%;
+  animation: pjax-loading 1.5s ease-in-out infinite;
+  z-index: 10000;
+}
+
+@keyframes pjax-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Smooth menu interactions */
+#sidebar .dd-item > a {
+  transition: background-color 0.2s ease;
+}
+
+#sidebar .dd-item.active > a {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth submenu expand/collapse */
+#sidebar .dd-item ul {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
