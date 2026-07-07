@@ -73,6 +73,8 @@ cdk bootstrap aws://ACCOUNT_ID/ap-southeast-1
 cdk deploy
 ```
 
+![VPC Creation via CDK](/images/week7/day2/vpc-creation.png)
+
 **Created resources:**
 - VPC: 10.0.0.0/16
 - Public subnets: 10.0.1.0/24, 10.0.2.0/24
