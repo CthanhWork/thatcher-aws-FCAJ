@@ -83,24 +83,60 @@ This week focuses on applying the Week 1 AWS foundation to actual server adminis
     </tr>
     <tr>
       <td>4</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>
+        <ul>
+          <li><a href="4-day4-vpc-endpoints/">Practice VPC Endpoints for private AWS service access</a></li>
+          <li><a href="4-day4-vpc-endpoints/">Create Gateway Endpoint for S3 to avoid internet gateway charges</a></li>
+          <li><a href="4-day4-vpc-endpoints/">Create Interface Endpoint for Systems Manager with private DNS</a></li>
+        </ul>
+      </td>
+      <td>04/30/2026</td>
+      <td>04/30/2026</td>
+      <td>
+        <ul>
+          <li><a href="https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints.html">VPC endpoints</a></li>
+          <li><a href="https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-gateway.html">Gateway endpoints</a></li>
+          <li><a href="https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface.html">Interface endpoints</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>5</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>
+        <ul>
+          <li><a href="5-day5-network-monitoring/">Practice VPC Flow Logs for network traffic analysis</a></li>
+          <li><a href="5-day5-network-monitoring/">Enable Flow Logs for H-smart-VPC and export to CloudWatch Logs</a></li>
+          <li><a href="5-day5-network-monitoring/">Query Flow Logs to identify rejected traffic and security group issues</a></li>
+        </ul>
+      </td>
+      <td>05/01/2026</td>
+      <td>05/01/2026</td>
+      <td>
+        <ul>
+          <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html">VPC Flow Logs</a></li>
+          <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/working-with-flow-logs.html">Working with flow logs</a></li>
+          <li><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html">CloudWatch Logs</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>6</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>
+        <ul>
+          <li><a href="6-day6-network-acls-security/">Practice Network ACLs for subnet-level security</a></li>
+          <li><a href="6-day6-network-acls-security/">Configure stateless NACL rules for inbound and outbound traffic</a></li>
+          <li><a href="6-day6-network-acls-security/">Compare NACL behavior vs Security Group behavior through testing</a></li>
+        </ul>
+      </td>
+      <td>05/02/2026</td>
+      <td>05/02/2026</td>
+      <td>
+        <ul>
+          <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html">Network ACLs</a></li>
+          <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/security.html">Security in Amazon VPC</a></li>
+          <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html">Security groups vs Network ACLs</a></li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>7</td>
@@ -117,6 +153,9 @@ This week focuses on applying the Week 1 AWS foundation to actual server adminis
 - [Day 1: AWS Systems Manager Session Manager Setup](1-day1-systems-manager-session-manager/)
 - [Day 2: VPC Peering Setup and DNS Troubleshooting](2-day2-vpc-peering/)
 - [Day 3: Transit Gateway Hub Setup](3-day3-transit-gateway/)
+- [Day 4: VPC Endpoints for Private AWS Service Access](4-day4-vpc-endpoints/)
+- [Day 5: VPC Flow Logs for Network Monitoring](5-day5-network-monitoring/)
+- [Day 6: Network ACLs for Subnet-Level Security](6-day6-network-acls-security/)
 
 ## Note For Mentors
 
