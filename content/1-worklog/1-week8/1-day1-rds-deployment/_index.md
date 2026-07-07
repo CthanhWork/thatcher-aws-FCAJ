@@ -31,6 +31,8 @@ RDS PostgreSQL provides managed, scalable relational database service without se
    - `10.0.12.0/24` (Private subnet 2)
 7. **Create**
 
+![Create DB Subnet Group](../images/tạo%20DB%20Subnet%20Group.png)
+
 **Via AWS CLI:**
 
 ```bash
@@ -158,6 +160,8 @@ aws rds describe-db-instances \
 
 Statuses: `creating` → `backing-up` → `available`
 
+![Create RDS Instance](../images/tao%20instance.png)
+
 ### Step 4: Get RDS Endpoint
 
 ```bash
@@ -171,6 +175,8 @@ aws rds describe-db-instances \
 ```
 travel-platform-db.c1a2b3c4d5e6.ap-southeast-1.rds.amazonaws.com
 ```
+
+![Get RDS Endpoint](../images/Lấy%20Endpoint%20của%20RDS.png)
 
 **Save this endpoint!** You'll use it in `DATABASE_URL`.
 
@@ -202,6 +208,8 @@ travel-platform-db.c1a2b3c4d5e6.ap-southeast-1.rds.amazonaws.com
   - **Outbound rules**: All traffic (default)
 
 2. **Launch instance**
+
+![Setup Bastion Host](../images/Setup%20Bastion%20Host.png)
 
 **Update RDS security group to allow bastion:**
 

@@ -24,6 +24,8 @@ ElastiCache Redis provides managed in-memory caching for the Travel Platform, en
 6. **Subnets**: Select both **private subnets** (10.0.11.0/24, 10.0.12.0/24)
 7. **Create**
 
+![Create Cache Subnet Group](../images/Tạo%20Cache%20Subnet%20Group.png)
+
 **Via AWS CLI:**
 
 ```bash
