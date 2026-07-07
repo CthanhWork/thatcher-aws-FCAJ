@@ -6,4 +6,6 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-Document workshops, meetups, and events you joined here.
+This section will document the workshops, technical sessions, and events I participate in during the internship.
+
+Note for visitors: the event records are currently being prepared. I will update this section soon with event summaries, learning outcomes, and related highlights from my internship journey.

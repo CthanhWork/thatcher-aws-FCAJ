@@ -5,4 +5,4 @@ weight: 9
 chapter: false
 ---
 
-Write your Week 9 activities here.
+Note for visitors: this section is currently under preparation. I will update my Week 9 worklog soon.

@@ -5,4 +5,4 @@ weight: 8
 chapter: false
 ---
 
-Write your Week 8 activities here.
+Note for visitors: this section is currently under preparation. I will update my Week 8 worklog soon.

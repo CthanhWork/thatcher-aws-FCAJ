@@ -5,4 +5,4 @@ weight: 10
 chapter: false
 ---
 
-Write your Week 10 activities here.
+Note for visitors: this section is currently under preparation. I will update my Week 10 worklog soon.

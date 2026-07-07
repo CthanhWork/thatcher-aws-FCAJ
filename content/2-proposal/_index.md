@@ -6,13 +6,13 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Internship Proposal
-
 ## Introduction
 
-My name is **Hoang Chi Thanh**, and I am honored to join the **First Cloud Journey (FCAJ)** internship program at **Amazon Web Services Vietnam Co., Ltd.** During my internship period from **17/04/2025 to 10/07/2026**, I aim to strengthen both my technical foundation and practical engineering mindset through hands-on cloud learning, real-world problem solving, and continuous self-improvement.
+My name is **Hoang Chi Thanh**, and I am honored to join the **Workforce Bootcamp - First Cloud AI Journey** internship program at **Cong ty TNHH Amazon Web Services Viet Nam**. During my internship period from **17/04/2025 to 10/07/2026**, I aim to strengthen both my technical foundation and practical engineering mindset through hands-on cloud learning, real-world problem solving, and continuous self-improvement.
 
 As a student with strong interest in **Fullstack Development** using **Spring Boot** and **ReactJS**, as well as modern **AI applications** such as **Retrieval-Augmented Generation (RAG)** and **Computer Vision**, I see FCAJ as an important opportunity to bridge academic learning with production-oriented cloud practices. I am excited to explore how AWS services can support scalable, secure, and intelligent applications in real business scenarios.
+
+I am also grateful to be guided by **Nguyen Gia Hung**, **Head of Solution Architect**, whose mentorship I believe will help me develop a more practical and professional understanding of cloud architecture, solution design, and technical execution.
 
 ## Objective
 

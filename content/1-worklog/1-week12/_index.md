@@ -5,4 +5,4 @@ weight: 12
 chapter: false
 ---
 
-Write your Week 12 activities here.
+Note for visitors: this section is currently under preparation. I will update my Week 12 worklog soon.

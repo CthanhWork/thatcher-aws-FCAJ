@@ -6,4 +6,6 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-Add translated blog summaries or links here.
+This section will collect the translated technical blogs I complete during the internship.
+
+Note for visitors: the translated blog entries are currently being prepared. I will update this section soon with high-quality summaries, translated content, and key technical takeaways.
