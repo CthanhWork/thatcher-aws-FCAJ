@@ -50,6 +50,8 @@ For the travel platform project, IAM security ensures only authorized services c
 4. Role name: `LambdaExecutionRole`
 5. **Create role**
 
+![Lambda Execution Role](/images/week7/day1/lambda-role.png)
+
 ### Step 3: Create ECS Task Execution Role
 
 **For container deployments:**
@@ -62,6 +64,8 @@ For the travel platform project, IAM security ensures only authorized services c
 4. Role name: `ECSTaskExecutionRole`
 5. **Create role**
 
+![ECS Task Execution Role](/images/week7/day1/ecs-role.png)
+
 ### Step 4: Enable AWS CloudTrail
 
 **Audit all API calls:**
@@ -72,6 +76,8 @@ For the travel platform project, IAM security ensures only authorized services c
 4. **Storage location**: Create new S3 bucket (auto-generated name)
 5. Next → Select **Management events** (captures all API calls)
 6. **Create trail**
+
+![CloudTrail Setup](/images/week7/day1/cloudtrail.png)
 
 **What CloudTrail logs:**
 - Who made the API call (IAM user/role)
