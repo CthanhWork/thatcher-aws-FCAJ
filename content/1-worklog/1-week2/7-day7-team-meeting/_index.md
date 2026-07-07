@@ -1,7 +1,7 @@
 ---
 title: "Day 7 - FCAJ Team Meeting: Learning, AI, Career, and Vibe-Coding"
-date: 2026-05-10
-weight: 1
+date: 2026-05-03
+weight: 7
 summary: "Attended an FCAJ internal team meeting featuring four speakers on learning psychology, AWS AI applications, career mindset, and AI-assisted vibe-coding with a structured repo template."
 chapter: false
 ---

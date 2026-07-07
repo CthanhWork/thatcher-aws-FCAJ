@@ -2,13 +2,13 @@
 title: "Week 3"
 date: 2026-05-04
 weight: 3
-summary: "Week 3 documents an FCAJ internal team meeting with four speakers covering learning psychology, AWS AI applications, career mindset, and AI-assisted development tooling."
+summary: "Week 3 focuses on building application-layer AWS infrastructure for H-Smart, including load balancing, auto-scaling, managed databases, serverless services, and operational monitoring."
 chapter: false
 ---
 
 ## Weekly Objective
 
-This week focuses on building application-layer AWS infrastructure for H-Smart, moving beyond networking fundamentals into compute, storage, database, and serverless services. The hands-on tasks include load balancing with ALB, auto-scaling for capacity management, managed databases with RDS, static website hosting with S3 and CloudFront, serverless APIs with Lambda and API Gateway, and operational monitoring with CloudWatch. Week 3 concludes with a structured team meeting on Day 7 where four speakers share insights on learning psychology, AWS AI applications, career mindset, and AI-assisted development tooling.
+This week focuses on building application-layer AWS infrastructure for H-Smart, moving beyond networking fundamentals into compute, storage, database, and serverless services. The hands-on tasks include load balancing with ALB, auto-scaling for capacity management, managed databases with RDS, static website hosting with S3 and CloudFront, serverless APIs with Lambda and API Gateway, and operational monitoring with CloudWatch.
 
 ## Tasks To Be Carried Out This Week
 
@@ -137,23 +137,6 @@ This week focuses on building application-layer AWS infrastructure for H-Smart, 
         </ul>
       </td>
     </tr>
-    <tr>
-      <td>7</td>
-      <td>
-        <ul>
-          <li><a href="1-day7-team-meeting/">Attend FCAJ internal team meeting with four speaker sessions</a></li>
-          <li><a href="1-day7-team-meeting/">Absorb and document insights on learning psychology, AWS AI, career mindset, and AI vibe-coding tooling</a></li>
-        </ul>
-      </td>
-      <td>05/10/2026</td>
-      <td>05/10/2026</td>
-      <td>
-        <ul>
-          <li><a href="https://aws.amazon.com/bedrock/">Amazon Bedrock</a></li>
-          <li><a href="https://aws.amazon.com/ai/">AI on AWS</a></li>
-        </ul>
-      </td>
-    </tr>
   </tbody>
 </table>
 
@@ -165,8 +148,7 @@ This week focuses on building application-layer AWS infrastructure for H-Smart, 
 - [Day 4: S3 Static Website Hosting with CloudFront CDN](4-day4-s3-static-website/)
 - [Day 5: AWS Lambda and API Gateway for Serverless APIs](5-day5-lambda-api-gateway/)
 - [Day 6: CloudWatch Monitoring and Alarms](6-day6-cloudwatch-monitoring/)
-- [Day 7: FCAJ Team Meeting — Learning, AI, Career, and Vibe-Coding](1-day7-team-meeting/)
 
 ## Note For Mentors
 
-Mentors can review raw evidence directly in the detailed task pages linked from the table above. Week 3 covers application-layer infrastructure including load balancing, auto-scaling, managed databases, static website hosting, serverless APIs, and operational monitoring. Day 7 documents the FCAJ team meeting with takeaways from all four speaker sessions on learning, AI, career, and development workflows.
+Mentors can review raw evidence directly in the detailed task pages linked from the table above. Week 3 covers application-layer infrastructure including load balancing, auto-scaling, managed databases, static website hosting, serverless APIs, and operational monitoring.

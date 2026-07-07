@@ -140,10 +140,20 @@ This week focuses on applying the Week 1 AWS foundation to actual server adminis
     </tr>
     <tr>
       <td>7</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>
+        <ul>
+          <li><a href="7-day7-team-meeting/">Attend FCAJ internal team meeting with four speaker sessions</a></li>
+          <li><a href="7-day7-team-meeting/">Absorb and document insights on learning psychology, AWS AI, career mindset, and AI vibe-coding tooling</a></li>
+        </ul>
+      </td>
+      <td>05/03/2026</td>
+      <td>05/03/2026</td>
+      <td>
+        <ul>
+          <li><a href="https://aws.amazon.com/bedrock/">Amazon Bedrock</a></li>
+          <li><a href="https://aws.amazon.com/ai/">AI on AWS</a></li>
+        </ul>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -156,6 +166,7 @@ This week focuses on applying the Week 1 AWS foundation to actual server adminis
 - [Day 4: VPC Endpoints for Private AWS Service Access](4-day4-vpc-endpoints/)
 - [Day 5: VPC Flow Logs for Network Monitoring](5-day5-network-monitoring/)
 - [Day 6: Network ACLs for Subnet-Level Security](6-day6-network-acls-security/)
+- [Day 7: FCAJ Team Meeting — Learning, AI, Career, and Vibe-Coding](7-day7-team-meeting/)
 
 ## Note For Mentors
 
