@@ -1,5 +1,6 @@
 <!-- PJAX navigation for smooth page transitions -->
-<script src="{{ "js/pjax-navigation.js" | relURL }}"></script>
+{{ $assetVersion := now.Unix }}
+<script src="{{ "js/pjax-navigation.js" | relURL }}?v={{ $assetVersion }}"></script>
 
 <!-- Sidebar collapse/expand for weeks -->
-<script src="{{ "js/sidebar-collapse.js" | relURL }}"></script>
+<script src="{{ "js/sidebar-collapse.js" | relURL }}?v={{ $assetVersion }}"></script>

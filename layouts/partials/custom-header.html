@@ -1,2 +1,6 @@
 <!-- Custom CSS for PJAX styles -->
-<link rel="stylesheet" href="{{ "css/pjax-styles.css" | relURL }}">
+{{ $assetVersion := now.Unix }}
+<link rel="stylesheet" href="{{ "css/pjax-styles.css" | relURL }}?v={{ $assetVersion }}">
+
+<!-- Sidebar collapse/expand styles -->
+<link rel="stylesheet" href="{{ "css/sidebar-collapse.css" | relURL }}?v={{ $assetVersion }}">
