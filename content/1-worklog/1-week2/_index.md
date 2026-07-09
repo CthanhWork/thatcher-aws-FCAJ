@@ -120,25 +120,6 @@ This week focuses on applying the Week 1 AWS foundation to actual server adminis
       </td>
     </tr>
     <tr>
-      <td>6</td>
-      <td>
-        <ul>
-          <li><a href="6-day6-network-acls-security/">Practice Network ACLs for subnet-level security</a></li>
-          <li><a href="6-day6-network-acls-security/">Configure stateless NACL rules for inbound and outbound traffic</a></li>
-          <li><a href="6-day6-network-acls-security/">Compare NACL behavior vs Security Group behavior through testing</a></li>
-        </ul>
-      </td>
-      <td>05/02/2026</td>
-      <td>05/02/2026</td>
-      <td>
-        <ul>
-          <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html">Network ACLs</a></li>
-          <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/security.html">Security in Amazon VPC</a></li>
-          <li><a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html">Security groups vs Network ACLs</a></li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
       <td>7</td>
       <td>
         <ul>
@@ -165,7 +146,6 @@ This week focuses on applying the Week 1 AWS foundation to actual server adminis
 - [Day 3: Transit Gateway Hub Setup](3-day3-transit-gateway/)
 - [Day 4: VPC Endpoints for Private AWS Service Access](4-day4-vpc-endpoints/)
 - [Day 5: VPC Flow Logs for Network Monitoring](5-day5-network-monitoring/)
-- [Day 6: Network ACLs for Subnet-Level Security](6-day6-network-acls-security/)
 - [Day 7: FCAJ Team Meeting — Learning, AI, Career, and Vibe-Coding](7-day7-team-meeting/)
 
 ## Note For Mentors
