@@ -118,25 +118,6 @@ This week focuses on building application-layer AWS infrastructure for H-Smart, 
         </ul>
       </td>
     </tr>
-    <tr>
-      <td>6</td>
-      <td>
-        <ul>
-          <li><a href="6-day6-cloudwatch-monitoring/">Practice CloudWatch monitoring and alarms for AWS resources</a></li>
-          <li><a href="6-day6-cloudwatch-monitoring/">Create custom CloudWatch dashboard for EC2, RDS, and ALB metrics</a></li>
-          <li><a href="6-day6-cloudwatch-monitoring/">Configure SNS topic and CloudWatch alarms for high CPU or unhealthy targets</a></li>
-        </ul>
-      </td>
-      <td>05/09/2026</td>
-      <td>05/09/2026</td>
-      <td>
-        <ul>
-          <li><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html">What is Amazon CloudWatch?</a></li>
-          <li><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html">Create alarms</a></li>
-          <li><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html">Using CloudWatch dashboards</a></li>
-        </ul>
-      </td>
-    </tr>
   </tbody>
 </table>
 
@@ -147,7 +128,6 @@ This week focuses on building application-layer AWS infrastructure for H-Smart, 
 - [Day 3: Amazon RDS for Managed MySQL Database](3-day3-rds-mysql/)
 - [Day 4: S3 Static Website Hosting with CloudFront CDN](4-day4-s3-static-website/)
 - [Day 5: AWS Lambda and API Gateway for Serverless APIs](5-day5-lambda-api-gateway/)
-- [Day 6: CloudWatch Monitoring and Alarms](6-day6-cloudwatch-monitoring/)
 
 ## Note For Mentors
 

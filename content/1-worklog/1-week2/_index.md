@@ -1,4 +1,4 @@
----
+﻿---
 title: "Week 2"
 date: 2026-04-27
 weight: 2
@@ -120,11 +120,11 @@ This week focuses on applying the Week 1 AWS foundation to actual server adminis
       </td>
     </tr>
     <tr>
-      <td>7</td>
+      <td>6</td>
       <td>
         <ul>
-          <li><a href="7-day7-team-meeting/">Attend FCAJ internal team meeting with four speaker sessions</a></li>
-          <li><a href="7-day7-team-meeting/">Absorb and document insights on learning psychology, AWS AI, career mindset, and AI vibe-coding tooling</a></li>
+          <li><a href="6-day6-team-meeting/">Attend FCAJ internal team meeting with four speaker sessions</a></li>
+          <li><a href="6-day6-team-meeting/">Absorb and document insights on learning psychology, AWS AI, career mindset, and AI vibe-coding tooling</a></li>
         </ul>
       </td>
       <td>05/03/2026</td>
@@ -146,8 +146,9 @@ This week focuses on applying the Week 1 AWS foundation to actual server adminis
 - [Day 3: Transit Gateway Hub Setup](3-day3-transit-gateway/)
 - [Day 4: VPC Endpoints for Private AWS Service Access](4-day4-vpc-endpoints/)
 - [Day 5: VPC Flow Logs for Network Monitoring](5-day5-network-monitoring/)
-- [Day 7: FCAJ Team Meeting — Learning, AI, Career, and Vibe-Coding](7-day7-team-meeting/)
+- [Day 6: FCAJ Team Meeting — Learning, AI, Career, and Vibe-Coding](6-day6-team-meeting/)
 
 ## Note For Mentors
 
 Mentors can review raw evidence directly in the detailed task pages linked from the table above. The current detailed evidence includes IAM role creation, EC2 launch configuration, Session Manager console access, local AWS CLI troubleshooting, VPC Peering route planning, Cross-Peer DNS troubleshooting, and Transit Gateway hub routing practice.
+

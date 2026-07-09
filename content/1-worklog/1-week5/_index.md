@@ -123,26 +123,6 @@ This week focuses on serverless architectures and API development for H-Smart, c
         </ul>
       </td>
     </tr>
-    <tr>
-      <td>6</td>
-      <td>
-        <ul>
-          <li><a href="6-day6-lambda-layers/">Practice Lambda Layers and serverless best practices</a></li>
-          <li><a href="6-day6-lambda-layers/">Create and deploy Lambda Layers for shared dependencies</a></li>
-          <li><a href="6-day6-lambda-layers/">Optimize Lambda cold start and memory allocation</a></li>
-          <li><a href="6-day6-lambda-layers/">Implement Lambda function versioning and aliases</a></li>
-        </ul>
-      </td>
-      <td>05/23/2026</td>
-      <td>05/23/2026</td>
-      <td>
-        <ul>
-          <li><a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">Lambda layers</a></li>
-          <li><a href="https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html">Best practices</a></li>
-          <li><a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-versions.html">Function versions</a></li>
-        </ul>
-      </td>
-    </tr>
   </tbody>
 </table>
 
@@ -153,7 +133,6 @@ This week focuses on serverless architectures and API development for H-Smart, c
 - [Day 3: Amazon CloudWatch for Monitoring and Logging](3-day3-cloudwatch/)
 - [Day 4: Amazon EventBridge for Event-Driven Architecture](4-day4-eventbridge/)
 - [Day 5: Advanced S3 Features and Static Website Hosting](5-day5-s3-advanced/)
-- [Day 6: Lambda Layers and Serverless Best Practices](6-day6-lambda-layers/)
 
 ## Note For Mentors
 

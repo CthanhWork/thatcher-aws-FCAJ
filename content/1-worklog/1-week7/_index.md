@@ -119,25 +119,6 @@ The project context: Building infrastructure for a travel platform application w
         </ul>
       </td>
     </tr>
-    <tr>
-      <td>6</td>
-      <td>
-        <ul>
-          <li><a href="6-day6-resource-tagging/">Implement resource tagging strategy</a></li>
-          <li><a href="6-day6-resource-tagging/">Define tagging standards for project management</a></li>
-          <li><a href="6-day6-resource-tagging/">Apply tags to all infrastructure resources</a></li>
-          <li><a href="6-day6-resource-tagging/">Use tags for cost allocation and tracking</a></li>
-        </ul>
-      </td>
-      <td>06/06/2026</td>
-      <td>06/06/2026</td>
-      <td>
-        <ul>
-          <li><a href="https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html">Tagging AWS Resources</a></li>
-          <li><a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html">Cost Allocation Tags</a></li>
-        </ul>
-      </td>
-    </tr>
   </tbody>
 </table>
 
@@ -148,7 +129,6 @@ The project context: Building infrastructure for a travel platform application w
 - [Day 3: Security Groups for Multi-Tier Architecture](3-day3-security-groups/)
 - [Day 4: Billing Alerts and Budget Controls](4-day4-billing-alerts/)
 - [Day 5: AWS CLI Setup for Local Development](5-day5-aws-cli-setup/)
-- [Day 6: Resource Tagging Strategy](6-day6-resource-tagging/)
 
 ## Note For Mentors
 

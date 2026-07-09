@@ -118,25 +118,6 @@ This week advances into distributed systems patterns and performance optimizatio
         </ul>
       </td>
     </tr>
-    <tr>
-      <td>6</td>
-      <td>
-        <ul>
-          <li><a href="6-day6-step-functions/">Practice AWS Step Functions for workflow orchestration</a></li>
-          <li><a href="6-day6-step-functions/">Create state machine for multi-step business processes</a></li>
-          <li><a href="6-day6-step-functions/">Coordinate Lambda functions with error handling and retries</a></li>
-        </ul>
-      </td>
-      <td>05/30/2026</td>
-      <td>05/30/2026</td>
-      <td>
-        <ul>
-          <li><a href="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html">What is Step Functions?</a></li>
-          <li><a href="https://docs.aws.amazon.com/step-functions/latest/dg/concepts-states.html">States and state machines</a></li>
-          <li><a href="https://docs.aws.amazon.com/step-functions/latest/dg/concepts-error-handling.html">Error handling</a></li>
-        </ul>
-      </td>
-    </tr>
   </tbody>
 </table>
 
@@ -147,7 +128,6 @@ This week advances into distributed systems patterns and performance optimizatio
 - [Day 3: Amazon ElastiCache for Redis Caching](3-day3-elasticache-redis/)
 - [Day 4: CloudFront CDN for Global Content Delivery](4-day4-cloudfront-cdn/)
 - [Day 5: AWS Secrets Manager for Secure Credential Storage](5-day5-secrets-manager/)
-- [Day 6: AWS Step Functions for Workflow Orchestration](6-day6-step-functions/)
 
 ## Note For Mentors
 

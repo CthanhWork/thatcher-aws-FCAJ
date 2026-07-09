@@ -121,25 +121,6 @@ This week advances into production-ready AWS architectures for H-Smart, covering
         </ul>
       </td>
     </tr>
-    <tr>
-      <td>6</td>
-      <td>
-        <ul>
-          <li><a href="6-day6-waf-shield/">Practice AWS WAF and Shield for application security</a></li>
-          <li><a href="6-day6-waf-shield/">Configure WAF rules to protect against common web exploits</a></li>
-          <li><a href="6-day6-waf-shield/">Enable Shield Standard and review DDoS protection</a></li>
-        </ul>
-      </td>
-      <td>05/16/2026</td>
-      <td>05/16/2026</td>
-      <td>
-        <ul>
-          <li><a href="https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html">What is AWS WAF?</a></li>
-          <li><a href="https://docs.aws.amazon.com/waf/latest/developerguide/web-acl.html">Web ACLs</a></li>
-          <li><a href="https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html">AWS Shield</a></li>
-        </ul>
-      </td>
-    </tr>
   </tbody>
 </table>
 
@@ -150,7 +131,6 @@ This week advances into production-ready AWS architectures for H-Smart, covering
 - [Day 3: Amazon DynamoDB for NoSQL Data Storage](3-day3-dynamodb/)
 - [Day 4: AWS CloudFormation for Infrastructure as Code](4-day4-cloudformation/)
 - [Day 5: CI/CD Pipeline with CodePipeline and CodeBuild](5-day5-cicd-pipeline/)
-- [Day 6: AWS WAF and Shield for Application Security](6-day6-waf-shield/)
 
 ## Note For Mentors
 
