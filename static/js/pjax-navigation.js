@@ -71,6 +71,9 @@
         // Re-initialize features
         reinitializeFeatures();
 
+        // Let sidebar helpers resync after the DOM swap
+        $(document).trigger('pjax:content-updated', [url]);
+
         // Store visited page
         sessionStorage.setItem($('body').data('url'), 1);
         $('[data-nav-id="' + url + '"]').addClass('visited');

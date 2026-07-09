@@ -1,0 +1,33 @@
+/* Sidebar Week Collapse/Expand Styles */
+
+/* Week collapse icon styling */
+#sidebar .week-collapse-icon {
+  display: inline-block;
+  width: 1rem;
+  margin-right: 0.45rem;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  color: inherit;
+  font-size: 0.9em;
+}
+
+#sidebar .week-collapse-icon:hover {
+  color: #1694CA;
+}
+
+/* Smooth transition for worklog week submenu collapse/expand */
+#sidebar li.dd-item[data-nav-id^='/1-worklog/1-week'] > ul {
+  overflow: hidden;
+  transition: height 0.2s ease;
+}
+
+/* Active week styling */
+#sidebar li.dd-item[data-nav-id^='/1-worklog/1-week'].active > a .week-collapse-icon,
+#sidebar li.dd-item[data-nav-id^='/1-worklog/1-week'].parent > a .week-collapse-icon {
+  color: #1694CA;
+}
+
+/* Highlight on hover for week items */
+#sidebar li.dd-item[data-nav-id^='/1-worklog/1-week'] > a:hover .week-collapse-icon {
+  color: #1694CA;
+}
