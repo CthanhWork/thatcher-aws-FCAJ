@@ -44,3 +44,4 @@ Note for visitors: several sections are still being finalized. I will continue u
 2. [Proposal](2-proposal/)
 3. [Blogs Translated](3-blogstranslated/)
 4. [Events Participated](4-eventparticipated/)
+5. [Workshop: Serverless Travel Platform on AWS](5-workshop/)
