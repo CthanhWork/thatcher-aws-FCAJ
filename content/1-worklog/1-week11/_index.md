@@ -2,7 +2,7 @@
 title: "Week 11"
 date: 2026-06-29
 weight: 11
-summary: "Week 11 completes the Travel Platform backend with business bookings, admin monitoring, performance tuning, and final documentation."
+summary: "Week 11 completes the Travel Platform backend with business bookings, monitoring, optimization, and final documentation."
 chapter: false
 ---
 
@@ -136,4 +136,4 @@ This week completes the Travel Platform backend. The detailed implementation not
 
 ## Note For Mentors
 
-Week 11 finishes the backend project and wraps up the remaining business, monitoring, optimization, and documentation work. The implementation details, metrics, and final project notes are captured on the individual Day pages so the weekly overview stays consistent with the rest of the worklog.
+Week 11 finishes the backend project and wraps up the remaining business, monitoring, optimization, and documentation work. The implementation details and final project notes are captured on the individual Day pages so the weekly overview stays consistent with the rest of the worklog.
