@@ -11,6 +11,10 @@ weight: 2
 4. Identify whether the failure occurred during validation, authorization, database access, Redis access, or S3 signing.
 5. Correct the smallest responsible configuration or code unit, redeploy, then repeat the same request.
 
+The following log stream shows request lifecycle events together with Lambda duration, billed duration, configured memory, and peak memory usage.
+
+![CloudWatch Lambda log stream](/images/5-Workshop/travel-platform/21-cloudwatch-log.png)
+
 ## Useful Signals
 
 | Signal | What it can indicate |

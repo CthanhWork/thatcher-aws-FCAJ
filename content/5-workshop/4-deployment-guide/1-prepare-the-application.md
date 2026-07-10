@@ -12,6 +12,16 @@ npm run build
 npx prisma generate
 ```
 
+The generated Prisma Client confirms that the database access layer is ready for the compiled API package.
+
+![Prisma Client generated successfully](/images/5-Workshop/travel-platform/prisma-generate.png)
+
+## Local Runtime Check
+
+Before publishing an artifact, the backend can be started locally to verify that the HTTP server is reachable. In local development, the application can fall back to in-memory behavior when a local Redis instance is unavailable.
+
+![Local backend runtime check with Redis fallback](/images/5-Workshop/travel-platform/12-backend-build.png)
+
 Confirm that the compiled output, Prisma files, and production `package.json` are ready for the Lambda package. If dependencies or Prisma binaries changed, rebuild the Lambda layer as well.
 
 ```powershell

@@ -22,6 +22,14 @@ sequenceDiagram
 
 Protected endpoints validate the JWT before business logic runs. Role checks are applied to actions such as reviewing business claims, editing another user's resource, or accessing administration functions.
 
+## API Gateway Configuration
+
+The HTTP API is configured with a default route and automatic deployment for the active stage.
+
+![API Gateway route configuration](/images/5-Workshop/travel-platform/06-api-gateway-routes.png)
+
+![API Gateway stage with automatic deployment enabled](/images/5-Workshop/travel-platform/07-api-stage.png)
+
 ## 2. Image Upload with a Presigned URL
 
 1. The authenticated user asks the API for an upload URL.
@@ -30,6 +38,8 @@ Protected endpoints validate the JWT before business logic runs. Role checks are
 4. The frontend stores or displays the returned file URL with the related place or review.
 
 This approach avoids exposing AWS access keys to the browser and keeps image bytes out of the Lambda request path.
+
+![S3 buckets used for deployment artifacts and application storage](/images/5-Workshop/travel-platform/11-s3-artifact-bucket.png)
 
 ## 3. Review and Rating Update
 

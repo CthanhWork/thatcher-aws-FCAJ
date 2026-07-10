@@ -31,3 +31,7 @@ aws lambda get-function-configuration `
   --query 'LastUpdateStatus' `
   --output text
 ```
+
+The function configuration below shows a successful update with the Node.js 20 runtime, 512 MB memory allocation, and a 30-second timeout.
+
+![Lambda deployment status](/images/5-Workshop/travel-platform/lambda-update-status.png)

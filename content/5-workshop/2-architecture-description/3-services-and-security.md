@@ -25,6 +25,16 @@ weight: 3
 - Validate API payloads with schemas and enforce role checks for owner and admin actions.
 - Apply API Gateway throttling and restrictive CORS rules for the production frontend origin.
 
+## Network and Permission Evidence
+
+The Lambda configuration attaches the API runtime to the application VPC and its security group. The RDS connectivity page shows the managed PostgreSQL instance and its network configuration, while the Lambda permissions page records the API Gateway invoke permission and CloudWatch-related access.
+
+![Lambda VPC and security group configuration](/images/5-Workshop/travel-platform/04-lambda-vpc.png)
+
+![Lambda permissions and API Gateway invocation policy](/images/5-Workshop/travel-platform/05-lambda-permissions.png)
+
+![RDS connectivity and security configuration](/images/5-Workshop/travel-platform/09-rds-network.png)
+
 ## Production Extensions
 
 Cognito can replace or complement application-managed authentication. AWS WAF can protect the API from common web attacks. SQS, SNS, SES, and EventBridge are appropriate for email, notification, and scheduled workloads once those flows need independent scaling or retry behavior.
