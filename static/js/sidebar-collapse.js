@@ -2,8 +2,8 @@
 (function () {
   "use strict";
 
-  var WEEK_SELECTOR = '#sidebar li.dd-item[data-nav-id^="/1-worklog/1-week"]';
-  var WEEK_PATH_RE = /^\/1-worklog\/1-week\d+\/?$/;
+  var WEEK_SELECTOR = '#sidebar li.dd-item[data-nav-id*="/1-worklog/1-week"]';
+  var WEEK_PATH_RE = /\/1-worklog\/1-week\d+\/?$/;
 
   function isWeekItem($item) {
     var navId = $item.attr("data-nav-id") || "";
