@@ -133,5 +133,3 @@ This week focuses on building and deploying the core serverless backend API for 
 - [Day 3: Authentication Module with JWT](3-day3-auth-module/)
 - [Day 4: API Gateway Configuration](4-day4-api-gateway/)
 - [Day 5: Testing and Deployment](5-day5-testing-deployment/)
-
-Chi tiết triển khai và ghi chú kỹ thuật đã được chuyển xuống các trang Day 1 đến Day 5 bên dưới.
