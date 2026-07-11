@@ -24,17 +24,28 @@ The main objectives of my internship are:
 
 ## Personal Project Integration
 
-During the internship, I plan to apply the AWS knowledge I gain to my current project, **H-Smart**, an **AI-powered marketplace for second-hand home appliances**. The goal of H-Smart is to improve the experience of buying and selling pre-owned appliances by combining marketplace features with AI-based intelligence.
+The final personal project is a **Serverless Travel Platform on AWS**. It allows
+users to register, sign in, discover places, save destinations, write reviews,
+plan trips, and work with business and booking workflows.
 
-I expect AWS to support this project in several practical ways:
+AWS supports the project in the following practical ways:
 
-- **Amazon S3** can be used for storing product images and other static assets reliably and cost-effectively.
-- **Amazon RDS** can serve as the primary managed database for transactional data such as users, products, orders, and listing details.
-- **Amazon EC2** can host backend or supporting services when needed during experimentation and deployment.
-- **AWS Lambda** can be explored for lightweight background tasks, event-driven processing, or automation workflows.
-- **AWS Bedrock** is a promising direction for experimenting with **RAG-based AI features**, such as intelligent product recommendations, question answering, or semantic search in marketplace data.
+- **AWS Lambda** runs the Node.js and TypeScript API without a continuously
+  managed application server.
+- **Amazon API Gateway** exposes the public REST API and routes requests to the
+  Lambda function.
+- **Amazon RDS for PostgreSQL** stores users, places, trips, reviews, bookings,
+  and business claims.
+- **Amazon S3** supports application artifacts and the image-upload design.
+- **Amazon CloudWatch** provides Lambda logs and operational diagnostics.
+- **Amazon VPC and security groups** isolate database access and allow only the
+  Lambda runtime to connect to PostgreSQL.
+- **Vercel** hosts the Next.js frontend and provides HTTPS for the custom domain.
 
-By integrating AWS services into H-Smart, I aim to better understand how cloud-native components can improve system scalability, maintainability, and practical AI adoption.
+The deployed application is available at
+[travel.thatcherdev.id.vn](https://travel.thatcherdev.id.vn). Its public source
+repository is
+[github.com/CthanhWork/travel-platform-aws](https://github.com/CthanhWork/travel-platform-aws).
 
 ## Learning Roadmap
 
@@ -64,4 +75,4 @@ In addition, I commit to producing:
 
 ## Expected Outcome
 
-By the end of this internship, I expect to gain a solid practical foundation in AWS, improve my cloud security awareness, and build stronger confidence in deploying modern web and AI-related applications on cloud infrastructure. More importantly, I aim to transform what I learn in FCAJ into tangible value through both my personal project and the technical content I produce during the program.
+By the end of this internship, I expect to gain a solid practical foundation in AWS, improve my cloud security awareness, and build stronger confidence in deploying modern applications on cloud infrastructure. This outcome has been demonstrated through a working serverless application, a public source repository, a custom production domain, repeatable deployment assets, and a structured technical workshop.

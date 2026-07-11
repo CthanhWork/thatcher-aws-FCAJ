@@ -2,7 +2,7 @@
 title: "Day 4 - Project Summary and Outcomes"
 date: 2026-07-09
 weight: 4
-summary: "Summarized the internship project, major outcomes, and the overall completion status."
+summary: "Summarized the deployed Travel Platform, public repository, production domain, and final outcomes."
 chapter: false
 ---
 
@@ -14,11 +14,22 @@ The internship needed a final summary that explains what was built and why it ma
 
 ### Step 1: Summarize the Full Project
 
-I reviewed the major milestones across all weeks.
+I reviewed the major milestones across all weeks and consolidated the final
+Travel Platform architecture: Next.js on Vercel, API Gateway, Lambda, RDS
+PostgreSQL, S3, VPC security, and CloudWatch.
 
 ### Step 2: List the Main Outcomes
 
-I captured the final state of the backend, worklog, and deployment.
+I captured the final state of the backend, worklog, and deployment:
+
+- Production application at
+  [travel.thatcherdev.id.vn](https://travel.thatcherdev.id.vn).
+- Public source repository at
+  [CthanhWork/travel-platform-aws](https://github.com/CthanhWork/travel-platform-aws).
+- Registration and login verified through the AWS production API.
+- 301 travel places with search, category filters, pagination, images, ratings,
+  and demo metadata.
+- OpenStreetMap-based import tooling with stable source IDs and repeatable upserts.
 
 ### Step 3: Close Out the Report
 
@@ -38,4 +49,7 @@ I documented the completion status so the project has a clear end point.
 
 ## Application to Travel Platform
 
-This section gives the internship report a clear end-state and a concise summary of the results.
+The Travel Platform moved from architecture and module implementation to a
+working public product. The final result demonstrates application development,
+AWS networking, managed database operations, serverless deployment, DNS and
+HTTPS configuration, production debugging, and technical documentation.

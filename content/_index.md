@@ -6,6 +6,20 @@ chapter: false
 
 Welcome to my internship report and personal worklog for the AWS First Cloud Journey program.
 
+## Final Project
+
+The internship outcome is a working **Serverless Travel Platform on AWS**. The
+frontend is publicly available at
+[travel.thatcherdev.id.vn](https://travel.thatcherdev.id.vn), while the source
+code is published in the
+[CthanhWork/travel-platform-aws](https://github.com/CthanhWork/travel-platform-aws)
+repository.
+
+The deployed system uses AWS Lambda, API Gateway, Amazon RDS for PostgreSQL, S3,
+CloudWatch, and a Next.js frontend hosted on Vercel. The current demo catalog
+contains **301 travel places** across hotels, restaurants, attractions, and
+tours.
+
 ## Student Information
 
 **Full Name:** Hoang Chi Thanh
@@ -38,7 +52,8 @@ Welcome to my internship report and personal worklog for the AWS First Cloud Jou
 
 ## Report Sections
 
-Note for visitors: several sections are still being finalized. I will continue updating this report with detailed weekly activities, translated blogs, events, and technical outputs throughout my internship journey.
+This report now includes the completed worklog, final project proposal, deployed
+architecture, workshop instructions, validation evidence, and lessons learned.
 
 1. [Worklog](1-worklog/)
 2. [Proposal](2-proposal/)
