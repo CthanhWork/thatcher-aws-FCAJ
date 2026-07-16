@@ -4,6 +4,7 @@ date: 2026-04-20
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
+hidden: true
 ---
 
 This section will document the workshops, technical sessions, and events I participate in during the internship.

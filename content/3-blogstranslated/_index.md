@@ -4,6 +4,7 @@ date: 2026-04-20
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "
+hidden: true
 ---
 
 This section will collect the translated technical blogs I complete during the internship.
