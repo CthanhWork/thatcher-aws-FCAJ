@@ -13,7 +13,7 @@ weight: 2
 
 The following log stream shows request lifecycle events together with Lambda duration, billed duration, configured memory, and peak memory usage.
 
-![CloudWatch Lambda log stream](/images/5-Workshop/travel-platform/21-cloudwatch-log.png)
+![CloudWatch Lambda log stream](../../../images/5-Workshop/travel-platform/21-cloudwatch-log.png)
 
 ## Useful Signals
 

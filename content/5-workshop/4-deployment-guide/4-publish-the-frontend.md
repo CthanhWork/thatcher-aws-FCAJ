@@ -29,4 +29,4 @@ domain root and `/places` both returned HTTP 200, registration and login were
 verified against AWS, and the places page loaded 301 records with working search,
 category filters, and pagination.
 
-![Travel Platform frontend home page](/images/5-Workshop/travel-platform/frontend-home.png)
+![Travel Platform frontend home page](../../../images/5-Workshop/travel-platform/frontend-home.png)

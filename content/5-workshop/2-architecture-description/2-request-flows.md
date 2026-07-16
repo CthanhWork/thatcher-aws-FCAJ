@@ -26,9 +26,9 @@ Protected endpoints validate the JWT before business logic runs. Role checks are
 
 The HTTP API is configured with a default route and automatic deployment for the active stage.
 
-![API Gateway route configuration](/images/5-Workshop/travel-platform/06-api-gateway-routes.png)
+![API Gateway route configuration](../../../images/5-Workshop/travel-platform/06-api-gateway-routes.png)
 
-![API Gateway stage with automatic deployment enabled](/images/5-Workshop/travel-platform/07-api-stage.png)
+![API Gateway stage with automatic deployment enabled](../../../images/5-Workshop/travel-platform/07-api-stage.png)
 
 ## 2. Image Upload with a Presigned URL
 
@@ -39,7 +39,7 @@ The HTTP API is configured with a default route and automatic deployment for the
 
 This approach avoids exposing AWS access keys to the browser and keeps image bytes out of the Lambda request path.
 
-![S3 buckets used for deployment artifacts and application storage](/images/5-Workshop/travel-platform/11-s3-artifact-bucket.png)
+![S3 buckets used for deployment artifacts and application storage](../../../images/5-Workshop/travel-platform/11-s3-artifact-bucket.png)
 
 ## 3. Review and Rating Update
 
